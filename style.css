@@ -1,0 +1,530 @@
+/*police personnalisé Raleway (thin) pris sur google font et généreé en web sur fontawesome*/
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*police personnalisé Raleway (thin) pour tout le site*/
+body
+{
+	font-family: 'ralewaythin';
+}
+
+/* définition de la largeur du site et savoir qu'il est centré avec la propriété margin auto*/
+#bloc_page
+{
+	width: 100%;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/*l'entête du site comportant le logo, deux titres h1 et h2 suivi du menu nav*/
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#title
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#logo
+{
+	width: 30%;
+	height: auto;
+}
+
+header h1
+{
+	font-size: 1.2em; 
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 0;
+	color: black;
+}
+
+header h2
+{
+	font-size: 1em;
+	font-weight: normal;
+	margin-top: 0;
+	color: gray;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	border-top: 2px solid blue;
+	width: 10%;
+	padding-top: 30px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+nav li
+{
+	margin-right: 10 px;
+}
+
+nav a
+{
+	margin: 20px;
+	text-decoration: none;
+	color: #0065FC;
+	font-size: 1.1em;
+}
+
+/*la partie champ de recherche où le texte peut etre édité par l'usager*/
+.search-icon
+{
+	background-color: #F2F2F2;
+	border: 1px solid #F2F2F2;
+	width: 10%;
+	border-radius: 15px 0 0 15px;
+	height: 1.6em;
+	padding-top: 8px;
+	padding-right: 8px;
+	text-align: center;
+}
+
+#search-box
+{
+	display: flex;
+	padding-right: 0;
+}
+
+form
+{
+	width: 20%;
+    padding: 0;
+    margin-bottom: 10px;  	
+}
+
+input
+{
+    border: 1px solid #F2F2F2;
+	width: 35%;
+	height: 2.4em;
+    padding-left: 8px;
+    margin-right: 0;	
+}	
+
+button
+{
+	font-size: 1em;
+	border: none;
+	padding-left: 0;
+	background-color: #0065FC;
+	width: 40%;
+	border-radius: 0 15px 15px 0;
+	height: 2.1em;
+} 
+
+ /*la partie les filtres non fonctionnel changeant d'apparence au survol*/
+ #filters 
+ {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+ }
+ 
+ #filters h2
+ {
+	font-sise: 1em;
+	margin: 7px;	
+ }	 
+ 
+ .list-item
+{
+	border: 2px solid #F2F2F2;
+	border-radius: 20px;
+	padding-left: 0;
+	margin: 7px;
+	text-decoration: none;
+	padding-right: 7px;
+	padding-top: 0;
+	padding-bottom: 0;
+	color: black;
+	font-size: 1em;
+}
+
+.list-item:hover
+{
+	text-decoration: underline;
+	color: red;
+}
+ 
+.filter-item
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+	border-radius: 20px;
+	padding-top: 8px;
+	padding-left: 8px;
+	padding-bottom: 8px;
+	padding-right: 8px;
+	margin-right: 4px;
+}
+
+/*la partie avec l'icône info*/
+#information 
+{   
+    display: flex;
+	flex-direction: row;
+    align-items: baseline;
+}
+
+.icon-inf
+{
+	color: white;
+	background-color: #0065FC;
+	margin: 5px;
+	border-radius: 20px;
+	border: 1px solid #F2F2F2;
+}
+
+ #information p
+ {
+    font-size: 1em;
+    color: gray;
+ }	
+
+/*Entame du corps du site*/
+section
+{
+	display: flex;
+	margin-bottom: 40px;
+	margin-right: 50px;
+}
+	
+/*partie hébergements à Marseille*/
+#accomodation_mar 
+{
+	border: 1px solid #F2F2F2;
+	border-radius: 15px;
+	background-color: #F2F2F2;
+    display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	width: 50%;
+	height: 38em;
+	margin-right: 20px;	
+}
+	
+#accomodation_mar h2
+{
+	font-size: 1.2em;
+	padding-left: 25px;
+	position: absolute;
+	top: 38%;
+}
+
+#accomodation_mar figure
+{
+	border: 1px solid #F2F2F2;
+	background-color: white;
+	border-radius: 10px;
+    padding-top: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+	margin: 10px;
+	margin-left: 25px;
+}
+
+#accomodation_mar figcaption h3
+{
+	font-size:1em;
+	text-decoration: none;
+	color: black;
+	padding-left: 15px;
+}
+
+#accomodation_mar figcaption p
+{
+	font-size:0.8em;
+	text-decoration: none;
+	color: gray;
+	padding-left: 15px;
+}
+
+.starter
+{
+	padding-left: 15px;
+}
+
+#accomodation_mar p a
+{
+	text-decoration: none;
+	color: black;
+	padding-left: 20px;
+}
+
+#accomodation_mar a
+{
+	text-decoration: none;
+	color: #0065FC;
+}
+
+#accomodation_mar img
+{
+	width: 200px;
+	height: 113px;
+}
+
+.star-active
+{
+	color: #F2F2F2;
+}
+	
+/*partie aside*/
+#pop-eco
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	padding-left: 15px;
+	margin-left: 5px;
+	padding-top: 5px;
+}
+
+aside
+{
+	border: 1px solid #F2F2F2;
+	border-radius: 15px;
+	background-color: #F2F2F2;
+	width: 50%
+	height: 35em;
+	position: relative;
+	padding: 18px;
+}
+
+
+aside figure
+{
+	border: 1px solid #F2F2F2;
+	background-color: white;
+	border-radius: 10px;
+    padding-top: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+	margin: 30px;
+	margin-top: 3px;
+	margin-bottom: 30px;
+}
+
+aside figcaption
+{
+	float: right;
+}
+
+aside h2
+{
+	padding-top: 5px;
+	font-size: 1.2em;
+}
+
+.economic
+{
+	margin-left: 130px;
+	margin-top: 15px;
+	padding-top: 5px;
+}
+
+aside img
+{
+	width: 140px;
+	height: 140px;
+}
+
+aside figcaption h3
+{
+	font-size: 1em;
+	text-decoration: none;
+	color: black;
+	padding-left: 15px;
+}
+
+aside figcaption p
+{
+	font-size:0.8em;
+	text-decoration: none;
+	color: gray;
+	padding-left: 15px;
+}
+
+aside a
+{
+    text-decoration: none;
+	color: #0065FC;
+}
+
+/*partie activité*/
+#activities_mar 
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+}
+
+#activities_mar figure
+{
+	border-radius: 20px;
+    border: 1px solid #F2F2F2;
+	margin-left: 10px;
+	width: 250px;
+	margin-bottom: 30px;
+	box-shadow: 0 3px 3px #F2F2F2;
+}
+
+#activities_mar h2
+{
+	font-size: 1.2em;
+	position: absolute;
+	bottom: -30%;
+}
+
+#activities_mar figcaption h3
+{
+	font-size: 1em;
+	color: black;
+	padding-left: 8px;
+	padding-bottom: 10px;
+}
+
+#activities_mar a
+{
+	text-decoration: none;
+	font-size: 1em;
+}
+
+#activities_mar img
+{
+    border-radius: 20px 20px 0 0;
+	width: 250px; 	
+}
+
+/*class figure activities_mar*/
+.box-1
+{
+	height: 22em;
+}
+
+.box-2
+{
+	height: 12em;
+}
+
+.box-3
+{
+	height: 9em;
+	position: absolute;
+	top: 155%;
+	left: 20%;
+}
+
+.box-4
+{
+	height: 22em;
+}
+
+.box-5
+{
+	height: 10em;
+}
+
+.box-6
+{
+	height: 11em;
+	position: absolute;
+	bottom: -80%;
+	right: 22%;
+}
+
+/*partie footer*/
+footer
+{
+	display: flex;
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+	width: 75%;
+	align-items: baseline;
+	flex-direction: row;
+	margin-bottom: 30px;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+}
+
+footer ul
+{
+	list-style-type: none;
+}
+
+footer h2
+{
+	font-size: 1em;
+}
+
+#operation h2,ul
+{
+	padding-left: 20px;
+	margin-right: 200px;
+}
+
+#charter h2
+{
+    padding-left: 20px;
+}
+
+#help h2
+{
+	padding-left: 20px;
+}
+   	
+ 
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
