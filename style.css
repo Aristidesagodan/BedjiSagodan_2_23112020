@@ -1,8 +1,8 @@
 /*police personnalisé Raleway (thin) pris sur google font et généreé en web sur fontawesome*/
 @font-face {
     font-family: 'ralewaythin';
-    src: url('./font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('./font/raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -181,9 +181,9 @@ button
 	border-radius: 25px;
 	margin: 15px;
 	text-decoration: none;
-	padding-right: 12px;
-	padding-top: 13px;
-	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-top: 14px;
+	padding-bottom: 11px;
 	padding-left: 0;
 	color: black;
 	font-size: 1.4em;
@@ -203,10 +203,10 @@ button
     color: #0065FC;
     border: 1px solid #F2F2F2;
 	border-radius: 50%;
-	padding-top: 12px;
-	padding-left: 12px;
-	padding-bottom: 12px;
-	padding-right: 12px;
+	padding-top: 14px;
+	padding-left: 15px;
+	padding-bottom: 13px;
+	padding-right: 13px;
 	margin-right: 10px;
 	border-left: none;
 }
@@ -577,9 +577,8 @@ footer h2
 {
 	bloc_page
 	{
-		width: 100%;
-	}
-	
+		width: auto;
+	}	
 }
 
 @media all and (max-device-width: 480px)
@@ -591,29 +590,27 @@ footer h2
 	}
 
     .log-nav
-        {
+       {
 	    display: flex;
 	    flex-direction: column;
-		width: 100%;
-		justify-content: space-between;
 	}
 	
 	#title
-        {
+       {
 	    display: flex;
 	    flex-direction: column;
-		padding-left: 1.5em;
+		padding-left: 0;
     }
 
     #logo
-        {
+       {
 	    width: 30%;
 	    height: auto;
     }
 
         header h1
-        {
-	    font-size: 1.4em; 
+       {
+	    font-size: 1.6em; 
 	    font-weight: bold;
 	    margin-top: 15px;
 	    margin-bottom: 0;
@@ -623,38 +620,31 @@ footer h2
 	}
 
         header h2
-        {
-	    font-size: 1em;
+       {
+	    font-size: 1.1em;
 	    font-weight: normal;
 	    margin-top: 10px;
 	    color: gray;
 	    width: 100%;
+		margin-bottom: 30px;
     }
 
 	    nav li
-        {
+       {
 	    border-bottom: 2px solid transparent;
-	    padding-bottom: 15px;
-        padding-right: ;    		
+	    padding-bottom: 15px;   		
     }
   
     .active
-        {
+       {
         border-bottom: 2px solid #0065FC;
-		border-top: none;
-		padding-bottom: 15px;
-        padding-left: ;
-        padding-right: ;
-        width: 100% ;		
+		border-top: none;		
     }
 
     .active-1
 	{
         border-bottom: 2px solid #F2F2F2;
       	padding-bottom: 15px;
-		padding-left: ;
-		padding-right: ;
-		width: 100% ;
     }		
 		
 	.active:nth-child(1)
@@ -670,6 +660,7 @@ footer h2
 	.active-2:nth-child(3)
 	{
 	    order: 1;
+		align-self: flex-start;
 	}
 	
 	.active-2
@@ -677,28 +668,28 @@ footer h2
 	    position: absolute ;
         top: 0;
         right: 0;
-		padding-right: 2em;
+		padding-right: 4em;
 		padding-top: 1em;
     }
 	
 	.act
-        {
+       {
 	    color: gray;
     }
 
     nav ul
-        {
+       {
 	    list-style-type: none;
 	    display: flex;
 		margin-bottom: 2.5em;
 		justify-content: space-between;
-		width: 100%;
+		width: auto;
 		padding-left: 0;
 		margin-right: 5px;
     }
 
     nav a
-        {
+       {
 	    text-decoration: none;
 	    color: #0065FC;
 	    font-size: 1.1em;
@@ -708,7 +699,7 @@ footer h2
 @media all and (max-device-width: 480px)
 {
 	.location-icon
-        {
+       {
 	    background-color: #F2F2F2;
 	    border: 1px solid #F2F2F2;
 	    width: 10%;
@@ -736,8 +727,8 @@ footer h2
 	}
 
     #search_box 
-        {
-	    width: 80%;
+       {
+	    width: 82%;
         margin-bottom: 10px;
 	    border: 1px solid #F2F2F2;
 	    padding: 0;
@@ -745,22 +736,24 @@ footer h2
 	    flex-direction: row;
 	    border-radius: 15px;
 		height: auto;
+		margin-left: 20px;
+		margin-right: 0;
     }
 
     form
-        {
+       {
 	    padding: 0;
 	}
 
     input
-        {
+       {
 	    border: none;
 		padding-right: 16px;
 		font-size: 1em;
     }	
 
     button
-        {
+       {
 	    display: none;
     }
 }
@@ -768,15 +761,15 @@ footer h2
 @media all and (max-device-width: 480px)
 {	
     #filters 
-        {
+       {
 	    display: flex;
 	    flex-direction: column;
 	    align-items: baseline;
-		padding-left: 1.5em;
+		padding-left: 1.4em;
     }
  
     #filters h2
-        {
+       {
 	    font-size: 1.4em;
 	    margin: 7px;	
     }
@@ -791,10 +784,11 @@ footer h2
     }
 	
     .list-item
-        {
+       {
 	    border: 2px solid #F2F2F2;
-	    border-radius: 20px;
+	    border-radius: 30px;
 	    padding-left: 0;
+		padding-right: 8px;
 	    margin: 15px;
 	    text-decoration: none;
 	    padding-top: 0;
@@ -802,25 +796,30 @@ footer h2
 	    color: black;
 	    font-size: 1.3em;
 		margin-left: 0;
+		border-left: 0;
+		margin-bottom: 0;
     }
 
     .list-item:hover
-        {
+       {
 	    text-decoration: underline;
 	    color: red;
     }
  
     .filter-item
-        {
+       {
         background-color: #DEEBFF;
         color: #0065FC;
         border: 1px solid #F2F2F2;
-	    border-radius: 20px;
-	    padding-top: 8px;
-	    padding-left: 8px;
-	    padding-bottom: 8px;
-	    padding-right: 8px;
+	    border-radius: 50%;
+	    padding: 14px;
 	    margin-right: 4px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 16px;
+		text-align: center;
+		
     }
 }	
 
@@ -833,11 +832,13 @@ footer h2
 	    flex-direction: row;
         align-items: baseline;
 	    padding-left: 1.3em;
-		width: 100%;
+		width: 90%;
+		padding-right: 0;
+		margin-right: 0;
     }
 
     .icon-inf
-        {
+       {
 	    color: #0065FC;
 	    background-color: white;
 	    padding: 6px 10px;
@@ -847,8 +848,8 @@ footer h2
     }
 
     #information p
-        {
-        font-size: 1.1em;
+       {
+        font-size: 1em;
         color: gray;
     }	
 }
@@ -856,7 +857,7 @@ footer h2
 @media all and (max-device-width: 480px)
 {
     section
-        {
+       {
 	    display: flex;
 		flex-direction: column;
 	    margin-bottom: 20px;
@@ -878,7 +879,7 @@ footer h2
 	
 	/*partie hébergements à Marseille*/
     #accomodation_mar 
-        {
+       {
 	    border: none;
 	    border-radius: 0;
 		background-color: white;
@@ -887,20 +888,22 @@ footer h2
 	    padding-bottom: 0.5em;
 	    width: auto;
 	    height: auto;
-        flex-direction: column;	
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;		
     }
 	
     #accomodation_mar h2
-        {
+       {
 	    font-size: 1.4em;
-	    padding-left: 15px;
+	    padding-left: 20px;
 	    padding-top: 5px;
 	    padding-bottom: 0;
 	    margin-bottom: 2px;
     }
 
     .am
-        {
+       {
 	    display: flex;
 	    flex-direction: column;
 	    margin: 5px;
@@ -909,24 +912,25 @@ footer h2
     }
 
     .am figure
-        {
+       {
         border: 1px solid #F2F2F2;
 	    background-color: white;
 	    border-radius: 15px;
         padding-top: 4px;
 	    padding-right: 4px;
 	    padding-left: 4px;
-	    width: 91%;
-		box-shadow: 6px 6px 6px #F2F2F2;
+	    width: 88%;
+		box-shadow: 1px 1px 12px #F2F2F2;
+		margin-left: 15px;
     }
 
     .am figcaption 
-        {
+       {
         padding: 0.7em;
     }
 
     .am figcaption h3
-        {
+       {
 	    font-size:1em;
 	    text-decoration: none;
 	    color: black;
@@ -934,7 +938,7 @@ footer h2
     }
 
     .am figcaption p
-        {
+       {
 	    font-size: 0.8em;
 	    text-decoration: none;
 	    color: gray;
@@ -943,31 +947,32 @@ footer h2
     }
 
     .am a
-        {
+       {
 	    text-decoration: none;
 	    color: #0065FC;
     }
 
     .am img
-        {
+       {
 	    width: 100%;
 	    height: 10em;
 	    border-radius: 15px 15px 0 0;
     }
 
     .star-active
-        {
+       {
 	    color: #F2F2F2;
     }
 
     #accomodation_mar p 
-        {
+       {
         margin-top: 0.5em;
         margin-bottom: 1em;
+		padding-left: 13px;
     }
 
     #accomodation_mar p a
-        {
+       {
 	    text-decoration: none;
 	    color: black;
         margin-left: 0.8em;
@@ -976,23 +981,24 @@ footer h2
     }
 	
     #accomodation_mar p a:hover
-        {
+       {
 	    text-decoration: underline;
     }
 	
 	
     /*partie aside*/
     #pop-eco
-        {
+       {
 	    display: flex;
 	    align-items: baseline;
 	    padding-left: 23px;
 	    padding-top: 15px;
 	    justify-content: space-between;
+		padding-right: 20px;
     }
 
     aside
-        {
+       {
 	    border: 1px solid #F2F2F2;
 	    border-radius: 0;
 		background-color: #F2F2F2;
@@ -1004,7 +1010,7 @@ footer h2
 
 
     aside figure
-    {
+       {
 	    border: 1px solid #F2F2F2;
 	    background-color: white;
 	    border-radius: 15px;
@@ -1013,28 +1019,29 @@ footer h2
 	    padding-left: 4px;
 	    margin-top: 0;
 	    margin-bottom: 25px;
-	    width: 93%;
-    }
+	    width: 88%;
+		margin-left: 15px;
+    }   
 
     aside figcaption
-        {
+       {
 	    float: right;
     }
 
     aside h2
-        {
+       {
 	    font-size: 1.4em;
     }
 
     aside img
-        {
+       {
 	    width: 40%;
 	    height: 10em;
 	    border-radius: 15px 0 0 15px;
     }
 
     aside figcaption h3
-        {
+       {
 	    font-size: 1em;
 	    text-decoration: none;
 	    color: black;
@@ -1043,7 +1050,7 @@ footer h2
     }
 
     aside figcaption p
-        {
+       {
 	    font-size:0.8em;
 	    text-decoration: none;
 	    color: gray;
@@ -1051,7 +1058,7 @@ footer h2
     }
 
     aside a
-        {
+       {
         text-decoration: none;
 	    color: #0065FC;
 	    margin-top: 0.8em;
@@ -1062,30 +1069,29 @@ footer h2
 {
 /*partie activité*/
     #activities_mar 
-        {
+       {
 	    display: flex;
 	    flex-direction: column;
-	    padding-left: 
-		padding-right: 
-		width: 100%;
+		width: auto;
 		margin-left: 0;
 		margin-right: 0;
     }
 
     .ma
-        {
+       {
 	    display: flex;
 		flex-direction: column;
     }
 
     .ma .col 
-        {
-        width: 98%;
-        position: relative;	
+       {
+        width: 88%;
+        position: relative;
+        margin-left: 20px;		
 	}
 
 	.ma figure
-        {
+       {
 	    border-radius: 20px;
         border: 1px solid #F2F2F2;
 	    margin-left: 0;
@@ -1095,12 +1101,13 @@ footer h2
     }
 
     #activities_mar h2
-        {
+       {
 	    font-size: 1.2em;
+		padding-left: 20px;
     }
 
     .ma figcaption h3
-        {
+       {
 	    font-size: 1em;
 	    color: black;
 	    padding-left: 8px;
@@ -1108,13 +1115,13 @@ footer h2
     }
 
     .ma a
-        {
+       {
 	    text-decoration: none;
 	    font-size: 1em;
     }
 
     .ma img
-        {
+       {
         border-radius: 20px 20px 0 0;
         width: 100%;
     }
@@ -1145,13 +1152,13 @@ footer h2
 	}
 
     .box-5
-        {
+       {
 	    height: 12em;
 	    padding-bottom: 3px;
 	}
 
     .box-6
-        {
+       {
 	    height: 13em;
 	    padding-bottom: 3px;
     }
@@ -1160,7 +1167,7 @@ footer h2
 {
 /*partie footer*/
     footer
-        {
+       {
 	    display: flex;
 	    border: 1px solid #F2F2F2;
 	    background-color: #F2F2F2;
@@ -1169,26 +1176,29 @@ footer h2
 	    height: auto;
 		flex-direction: column;
 		margin-right: 0;
-		margin-left: 0;		
+		margin-left: 0;
+  		justify-content: space-between;
+		padding-left: 0;
+		padding-right: 0;
     }
 
     footer a
-        {
+       {
 	    text-decoration: none;
 	    color: black;
 	    font-size: 1em;	
     }
 
     footer ul
-        {
+       {
 	    list-style-type: none;
 		padding-left: 1.5em;
-		margin-right: 3em
+		margin-right: 0;
     }
 
     footer li
-        {
-	    padding: 5px;
+       {
+	    padding: ;
     }
 
     footer h2
@@ -1198,25 +1208,607 @@ footer h2
     }
 
     #operation h2
-        {
-	    padding-left: 1.5em;
-	   
+       {
+	    padding-left: 1.5em; 
     }
 
     #charter h2
-        {
+       {
         padding-left: 1.5em;
     }
 
     #help h2
-        {
+       {
 	    padding-left: 1.5em;
     }
 }	
 
+/* responsive tablette*/
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+	bloc_page
+	{
+		width: 100%;
+	}	
+}
+
+@media all and (min-width:768px) and (max-width: 991px)
+{
+    header
+       {
+	    display: flex;
+	    flex-direction: column;
+	    padding-left: 2em;
+    }
+
+    .log-nav
+       {
+	    display: flex;
+	    flex-direction: column;
+    }
+
+    #title
+       {
+	    display: flex;
+	    flex-direction: column;
+    }
+
+    #logo
+       {
+	    width: 20%;
+	    height: auto;
+		padding-bottom: 30px;
+    }
+
+    header h1
+       {
+	    font-size: 1.2em; 
+	    font-weight: bold;
+	    margin-top: 15px;
+	    margin-bottom: 0;
+	    color: black;
+    }
+
+    header h2
+       {
+	    font-size: 1em;
+	    font-weight: normal;
+	    margin-top: 0;
+	    color: gray;
+	}
+    
+	nav li
+       {
+	    border-top: 2px solid transparent;
+	    padding-top: 30px;
+        padding: 30px;  	
+    }
+
+    nav li:hover
+       {
+        border-top: 2px solid #0065FC;
+    }
+   
+    .active
+       {
+        border-top: 2px solid #0065FC;
+    }  
+
+    .act
+       {
+	    color: gray;
+    }
+
+    nav ul
+       {
+	    list-style-type: none;
+	    display: flex;
+	    padding-left: 0;
+    }
+
+    nav a
+       {
+	    text-decoration: none;
+	    color: #0065FC;
+	    font-size: 1.1em;
+    }
+}
+	
+@media all and (min-width:768px) and (max-width: 991px)
+{
+	.location-icon
+       {
+	    background-color: #F2F2F2;
+	    border: none;
+	    width: 10%;
+	    border-radius: 15px 0 0 15px;
+	    padding-top: 16px;
+	    padding-bottom: 16px;
+	    padding-left: 16px;
+	    padding-right: 16px;
+	    text-align: center;
+    }
+
+    #search_box 
+       {
+	    width: 40%;
+        margin-bottom: 10px;
+	    display: flex;
+	    border-radius: 15px;
+	    border: 1px solid #F2F2F2;
+	    margin-left: 2em;
+}
+
+    input
+       {
+	    border: none;
+	    padding-left: 8px;
+	    padding-right: 30px;
+        font-weight: bold;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 1em;	
+    }	
+
+    button
+       {
+	    font-size: 1em;
+	    border: none;
+	    background-color: #0065FC;
+	    border-radius: 0 15px 15px 0;
+	    cursor: pointer;
+	    color: white;
+	    text-align: center;
+	    padding-left: 16px;
+	    padding-right: 16px;
+    }
+
+    .search-icon
+       {
+	    display: none;
+    }
+}
+
+@media all and (min-width:768px) and (max-width: 991px)
+{	
+    #filters  
+       {
+	    display: flex;
+	    padding-top: 10px;
+	    padding-left: 2em;
+		flex-direction: column;
+    }
+ 
+    #fil
+	{
+        display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		padding-left: 0;
+    }
+	
+	#filters h2
+       {
+	    font-size: 1.6em;
+	    margin: 15px;
+        margin-left: 0;
+        margin-bottom: 10px;	
+    }	 
+ 
+    .list-item
+       {
+	    border: 2px solid #F2F2F2;
+	    border-radius: 25px;
+	    margin: 15px;
+	    text-decoration: none;
+	    padding-right: 12px;
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    padding-left: 0;
+	    color: black;
+	    font-size: 1.4em;
+	    border-left: none;
+	    font-weight: bold;
+		margin-left: 0;
+    }
+
+    .list-item:hover
+       {
+	    text-decoration: underline;
+	    color: red;
+    }
+ 
+    .filter-item
+       {
+        background-color: #DEEBFF;
+        color: #0065FC;
+        border: 1px solid #F2F2F2;
+	    border-radius: 50%;
+	    padding-top: 14px;
+	    padding-left: 12px;
+	    padding-bottom: 14px;
+	    padding-right: 12px;
+	    margin-right: 10px;
+	    border-left: none;
+    }
+}	
+
+@media all and (min-width:768px) and (max-width: 991px)
+{
+    /*la partie avec l'icône info*/
+    #information 
+       {   
+        display: flex;
+	    flex-direction: row;
+        align-items: baseline;
+	    padding-left: 2em;
+    }
+
+    .icon-inf
+       {
+	    color: #0065FC;
+	    background-color: white;
+	    padding: 6px 10px;
+	    margin-right: 0.5em;
+	    border-radius: 50%;
+	    border: 1px solid #F2F2F2;
+    }
+
+    #information p
+       {
+        font-size: 1em;
+        color: gray;
+    }		
+}
+
+@media all and (min-width:768px) and (max-width: 991px)
+{
+    /*Entame du corps du site*/
+    section
+       {
+	    display: flex;
+	    margin-bottom: 20px;
+	    padding-left: 2em;
+	    padding-right: 2em;
+		flex-direction: column;
+    }
+	
+    /*partie hébergements à Marseille*/
+    #accomodation_mar 
+       {
+	    border: 1px solid #F2F2F2;
+	    border-radius: 0;
+	    background-color: #F2F2F2;
+        display: flex;
+	    padding-top: 0.5em;
+	    padding-bottom: 0.5em;
+	    width: 97%;
+	    height: auto;
+        flex-direction: column;
+        padding-left: 0.7em;
+        padding-right: 0.7em;	
+    }
+	
+    #accomodation_mar h2
+       {
+	    font-size: 1.4em;
+	    padding-left: 15px;
+	    padding-top: 5px;
+	    padding-bottom: 0;
+	    margin-bottom: 2px;
+    }
+
+    .am
+       {
+	    display: flex;
+	    flex-wrap: wrap;
+	    margin: 5px;
+	    padding-top: 2px;
+        justify-content: space-between;
+        position: relative;	
+    }
+
+    .am figure
+       {
+        border: 1px solid #F2F2F2;
+	    background-color: white;
+	    border-radius: 15px;
+        padding-top: 4px;
+	    padding-right: 4px;
+	    padding-left: 4px;
+	    margin: 0.5em;
+	    width: 45%;
+	    position: relative;
+    }
+
+    .am figcaption 
+       {
+        padding: 0.7em;
+    }
+
+    .am figcaption h3
+       {
+	    font-size:1em;
+	    text-decoration: none;
+	    color: black;
+	    margin: 0;
+    }
+
+    .am figcaption p
+       {
+	    font-size: 0.8em;
+	    text-decoration: none;
+	    color: gray;
+	    margin-top: 0.5em;
+	    margin-bottom: 0.5em;
+    }
+
+    .am a
+       {
+	    text-decoration: none;
+	    color: #0065FC;
+    }
+
+    .am img
+       {
+	    width: 100%;
+	    height: 10em;
+	    border-radius: 15px 15px 0 0;
+    }
+
+    .star-active
+       {
+	color: #F2F2F2;
+    }
+
+    #accomodation_mar p 
+       {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    #accomodation_mar p a
+       {
+	    text-decoration: none;
+	    color: black;
+        margin-left: 0.8em;
+        font-weight: bold;
+        margin-top: 0.5em;
+    }
+	
+    #accomodation_mar p a:hover
+       {
+	    text-decoration: underline;
+    }
+	
+	
+    /*partie aside*/
+    #pop-eco
+       {
+	    display: flex;
+	    align-items: baseline;
+	    padding-left: 23px;
+	    padding-top: 15px;
+	    justify-content: space-between;
+    }
+
+    aside
+       {
+	    border: 1px solid #F2F2F2;
+	    border-radius: 0;
+	    background-color: #F2F2F2;
+	    width: 78%;
+	    height: 49em;
+	    position: relative;
+	    margin-left: 4em;
+	    padding-right: 2em;
+    }
 
 
+    aside figure
+       {
+	    border: 1px solid #F2F2F2;
+	    background-color: white;
+	    border-radius: 15px;
+        padding-top: 4px;
+	    padding-right: 4px;
+	    padding-left: 4px;
+	    margin: 25px;
+	    margin-top: 0;
+	    margin-bottom: 25px;
+	    width: 93%;
+    }
 
+    aside figcaption
+       {
+	    float: right;
+	    padding-right: 0.3em;
+	    padding-top: 0.1em;
+	    padding-left: 0.1em;
+	    margin-right: 8em;
+    }
+
+    aside h2
+       {
+	    font-size: 1.4em;
+    }
+
+    aside img
+       {
+	    width: 45%;
+	    height: 12em;
+	    border-radius: 15px 0 0 15px;
+    }
+
+    aside figcaption h3
+       {
+	    font-size: 1em;
+	    text-decoration: none;
+	    color: black;
+    }
+
+    aside figcaption p
+       {
+	    font-size:0.8em;
+	    text-decoration: none;
+	    color: gray;
+    }
+
+    aside a
+       {
+        text-decoration: none;
+	    color: #0065FC;
+    }
+
+    .starter
+       {
+	    padding-top: 4em;
+    }
+}
+
+@media all and (min-width:768px) and (max-width: 991px)
+{
+    /*partie activité*/
+    #activities_mar 
+       {
+	    display: flex;
+	    flex-direction: column;
+	    padding-left: 2em;
+	    padding-right: 2em;
+    }
+
+    .ma
+       {
+	    display: flex;
+	    justify-content: space-between;
+		flex-wrap: wrap;
+    }
+
+    .ma .col 
+       {
+        width: 48%;
+        position: relative;
+	    margin-right: 0;	
+    }
+
+    .ma figure
+       {
+	    border-radius: 20px;
+        border: 1px solid #F2F2F2;
+	    margin-left: 0;
+	    width: 100%;
+	    margin-bottom: 40px;
+	    box-shadow: 0 3px 3px #F2F2F2;
+        height: auto;		
+    }
+
+    #activities_mar h2
+       {
+	    font-size: 1.2em;
+    }
+
+    .ma figcaption h3
+       {
+	    font-size: 1em;
+	    color: black;
+	    padding-left: 8px;
+	    padding-bottom: 15px;
+    }
+
+    .ma a
+       {
+	    text-decoration: none;
+	    font-size: 1em;
+    }
+
+    .ma img
+       {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    /*class figure ma*/
+    .box-2
+       {
+	    height: 15em;
+	    padding-bottom: 3px;	
+    }
+
+    .box-3
+        {
+	    height: 15em;
+	    padding-bottom: 3px;
+    }
+
+    .box-5
+       {
+	    height: 14em;
+	    padding-bottom: 3px;	
+    }
+
+    .box-6
+       {
+	    height: 16em;
+	    padding-bottom: 3px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width: 991px)
+{
+    /*partie footer*/
+    footer
+       {
+	    display: flex;
+	    border: 1px solid #F2F2F2;
+	    background-color: #F2F2F2;
+	    width: auto;
+	    margin-bottom: 0;
+	    margin-left: 0;
+	    margin-right: 0;
+	    height: 10em;
+    }
+
+    footer a
+       {
+	    text-decoration: none;
+	    color: black;
+	    font-size: 1em;	
+    }
+
+    footer ul
+       {
+	    list-style-type: none;
+	    padding-left: 2em;
+	    margin-right: 4em;
+    }
+
+    footer li
+       {
+	    padding: 5px;
+    }
+
+    footer h2
+       {
+	    font-size: 1.2em;
+	    padding-left: 1.9em;
+    }
+
+    #operation h2
+       {
+	    padding-left: 1.9em;
+    }
+
+    #charter h2
+       {
+        padding-left: 1.9em;
+    }
+
+    #help h2
+       {
+	    padding-left: 1.9em;
+    }
+}	
 
 
 
