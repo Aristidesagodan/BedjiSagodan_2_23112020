@@ -1,8 +1,8 @@
-/*police personnalisé Raleway (thin) pris sur google font et généreé en web sur fontawesome*/
+/*police personnalisé Raleway (medium) pris sur google font et généreé en web sur fontawesome*/
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'raleway-medium';
+    src: url('font/raleway-medium-webfont.woff2') format('woff2'),
+         url('font/raleway-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,7 +11,7 @@
 /*police personnalisé Raleway (thin) pour tout le site*/
 body
 {
-	font-family: 'ralewaythin';
+	font-family: 'raleway-medium';
 	margin: 0;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -178,12 +178,12 @@ button
 .list-item
 {
 	border: 2px solid #F2F2F2;
-	border-radius: 25px;
+	border-radius: 35px;
 	margin: 15px;
 	text-decoration: none;
 	padding-right: 30px;
-	padding-top: 14px;
-	padding-bottom: 11px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	padding-left: 0;
 	color: black;
 	font-size: 1.4em;
@@ -203,12 +203,14 @@ button
     color: #0065FC;
     border: 1px solid #F2F2F2;
 	border-radius: 50%;
-	padding-top: 14px;
-	padding-left: 15px;
-	padding-bottom: 13px;
-	padding-right: 13px;
+	padding: 14px;
 	margin-right: 10px;
 	border-left: none;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 32px;
 }
 
 /*la partie avec l'icône info*/
@@ -388,7 +390,7 @@ aside figure
 	margin: 25px;
 	margin-top: 0;
 	margin-bottom: 25px;
-	width: 95%;
+	width: 93%;
 }
 
 aside figcaption
@@ -414,7 +416,7 @@ aside img
 
 aside figcaption h3
 {
-	font-size: 1em;
+	font-size: 0.9em;
 	text-decoration: none;
 	color: black;
 }
@@ -599,7 +601,6 @@ footer h2
        {
 	    display: flex;
 	    flex-direction: column;
-		padding-left: 0;
     }
 
     #logo
@@ -610,7 +611,7 @@ footer h2
 
         header h1
        {
-	    font-size: 1.6em; 
+	    font-size: 1.5em; 
 	    font-weight: bold;
 	    margin-top: 15px;
 	    margin-bottom: 0;
@@ -621,7 +622,7 @@ footer h2
 
         header h2
        {
-	    font-size: 1.1em;
+	    font-size: 1em;
 	    font-weight: normal;
 	    margin-top: 10px;
 	    color: gray;
@@ -668,7 +669,7 @@ footer h2
 	    position: absolute ;
         top: 0;
         right: 0;
-		padding-right: 4em;
+		padding-right: 2em;
 		padding-top: 1em;
     }
 	
@@ -685,7 +686,7 @@ footer h2
 		justify-content: space-between;
 		width: auto;
 		padding-left: 0;
-		margin-right: 5px;
+		padding-right: 0;
     }
 
     nav a
@@ -736,7 +737,7 @@ footer h2
 	    flex-direction: row;
 	    border-radius: 15px;
 		height: auto;
-		margin-left: 20px;
+		margin-left: 30px;
 		margin-right: 0;
     }
 
@@ -786,7 +787,7 @@ footer h2
     .list-item
        {
 	    border: 2px solid #F2F2F2;
-	    border-radius: 30px;
+	    border-radius: 35px;
 	    padding-left: 0;
 		padding-right: 8px;
 	    margin: 15px;
@@ -794,7 +795,7 @@ footer h2
 	    padding-top: 0;
 	    padding-bottom: 0;
 	    color: black;
-	    font-size: 1.3em;
+	    font-size: 1.1em;
 		margin-left: 0;
 		border-left: 0;
 		margin-bottom: 0;
@@ -968,7 +969,7 @@ footer h2
        {
         margin-top: 0.5em;
         margin-bottom: 1em;
-		padding-left: 13px;
+		padding-left: 0.6em;
     }
 
     #accomodation_mar p a
@@ -1005,7 +1006,9 @@ footer h2
 	    width: auto;
 	    height: auto;
 	    margin-left: 0;
-		margin-right: 0;		
+		margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;		
 	}
 
 
@@ -1075,6 +1078,8 @@ footer h2
 		width: auto;
 		margin-left: 0;
 		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
     }
 
     .ma
@@ -1141,25 +1146,25 @@ footer h2
 
     .box-2
         {
-	    height: 13em;
+	    height: 14em;
 	    padding-bottom: 3px;
 	}
 
     .box-3
         {
-	    height: 13em;
+	    height: 14em;
 	    padding-bottom: 3px;
 	}
 
     .box-5
        {
-	    height: 12em;
+	    height: 14em;
 	    padding-bottom: 3px;
 	}
 
     .box-6
        {
-	    height: 13em;
+	    height: 15em;
 	    padding-bottom: 3px;
     }
 }
@@ -1228,7 +1233,7 @@ footer h2
 {
 	bloc_page
 	{
-		width: 100%;
+		width: auto;
 	}	
 }
 
@@ -1399,7 +1404,7 @@ footer h2
     .list-item
        {
 	    border: 2px solid #F2F2F2;
-	    border-radius: 25px;
+	    border-radius: 35px;
 	    margin: 15px;
 	    text-decoration: none;
 	    padding-right: 12px;
@@ -1425,12 +1430,14 @@ footer h2
         color: #0065FC;
         border: 1px solid #F2F2F2;
 	    border-radius: 50%;
-	    padding-top: 14px;
-	    padding-left: 12px;
-	    padding-bottom: 14px;
-	    padding-right: 12px;
+	    padding: 14px;
 	    margin-right: 10px;
 	    border-left: none;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 16px;
+		text-align: center;
     }
 }	
 
@@ -1779,8 +1786,8 @@ footer h2
     footer ul
        {
 	    list-style-type: none;
-	    padding-left: 2em;
-	    margin-right: 4em;
+	    padding-left: 1em;
+	    margin-right: 3em;
     }
 
     footer li
@@ -1791,22 +1798,22 @@ footer h2
     footer h2
        {
 	    font-size: 1.2em;
-	    padding-left: 1.9em;
+	    padding-left: 1em;
     }
 
     #operation h2
        {
-	    padding-left: 1.9em;
+	    padding-left: 1em;
     }
 
     #charter h2
        {
-        padding-left: 1.9em;
+        padding-left: 1em;
     }
 
     #help h2
        {
-	    padding-left: 1.9em;
+	    padding-left: 1em;
     }
 }	
 
