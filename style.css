@@ -272,14 +272,16 @@ section
 	margin-bottom: 2px;
 }
 
-.am
+.am a  
 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 5px;
 	padding-top: 2px;
     justify-content: space-between;
-    position: relative;	
+    position: relative;
+    text-decoration: none;
+	color: #0065FC;	
 }
 
 .am figure
@@ -315,12 +317,6 @@ section
 	color: gray;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-}
-
-.am a
-{
-	text-decoration: none;
-	color: #0065FC;
 }
 
 .am img
@@ -448,10 +444,12 @@ aside a
 	padding-right: 2em;
 }
 
-.ma
+.ma a
 {
 	display: flex;
 	justify-content: space-between;
+	text-decoration: none;
+	font-size: 1em;
 }
 
 .ma .col 
@@ -482,12 +480,6 @@ aside a
 	color: black;
 	padding-left: 8px;
 	padding-bottom: 15px;
-}
-
-.ma a
-{
-	text-decoration: none;
-	font-size: 1em;
 }
 
 .ma img
@@ -661,7 +653,6 @@ footer h2
 	.active-2:nth-child(3)
 	{
 	    order: 1;
-		align-self: flex-start;
 	}
 	
 	.active-2
@@ -903,13 +894,15 @@ footer h2
 	    margin-bottom: 2px;
     }
 
-    .am
+    .am a
        {
 	    display: flex;
 	    flex-direction: column;
 	    margin: 5px;
 	    padding-top: 2px;
-        position: relative;	
+        position: relative;
+		text-decoration: none;
+	    color: #0065FC;
     }
 
     .am figure
@@ -945,12 +938,6 @@ footer h2
 	    color: gray;
 	    margin-top: 0.5em;
 	    margin-bottom: 0.5em;
-    }
-
-    .am a
-       {
-	    text-decoration: none;
-	    color: #0065FC;
     }
 
     .am img
@@ -1082,10 +1069,12 @@ footer h2
 		padding-right: 0;
     }
 
-    .ma
+    .ma a
        {
 	    display: flex;
 		flex-direction: column;
+		text-decoration: none;
+	    font-size: 1em;
     }
 
     .ma .col 
@@ -1119,12 +1108,6 @@ footer h2
 	    padding-bottom: 15px;
     }
 
-    .ma a
-       {
-	    text-decoration: none;
-	    font-size: 1em;
-    }
-
     .ma img
        {
         border-radius: 20px 20px 0 0;
@@ -1145,13 +1128,13 @@ footer h2
     
 
     .box-2
-        {
+       {
 	    height: 14em;
 	    padding-bottom: 3px;
 	}
 
     .box-3
-        {
+       {
 	    height: 14em;
 	    padding-bottom: 3px;
 	}
@@ -1201,13 +1184,8 @@ footer h2
 		margin-right: 0;
     }
 
-    footer li
-       {
-	    padding: ;
-    }
-
     footer h2
-        {
+       {
 	    font-size: 1.2em;
 	    padding-left: 1.5em;
     }
@@ -1506,14 +1484,16 @@ footer h2
 	    margin-bottom: 2px;
     }
 
-    .am
+    .am a
        {
 	    display: flex;
 	    flex-wrap: wrap;
 	    margin: 5px;
 	    padding-top: 2px;
         justify-content: space-between;
-        position: relative;	
+        position: relative;
+        text-decoration: none;
+	    color: #0065FC;		
     }
 
     .am figure
@@ -1549,12 +1529,6 @@ footer h2
 	    color: gray;
 	    margin-top: 0.5em;
 	    margin-bottom: 0.5em;
-    }
-
-    .am a
-       {
-	    text-decoration: none;
-	    color: #0065FC;
     }
 
     .am img
@@ -1685,11 +1659,13 @@ footer h2
 	    padding-right: 2em;
     }
 
-    .ma
+    .ma a
        {
 	    display: flex;
 	    justify-content: space-between;
 		flex-wrap: wrap;
+		text-decoration: none;
+	    font-size: 1em;
     }
 
     .ma .col 
@@ -1723,12 +1699,6 @@ footer h2
 	    padding-bottom: 15px;
     }
 
-    .ma a
-       {
-	    text-decoration: none;
-	    font-size: 1em;
-    }
-
     .ma img
        {
         border-radius: 20px 20px 0 0;
@@ -1743,7 +1713,7 @@ footer h2
     }
 
     .box-3
-        {
+       {
 	    height: 15em;
 	    padding-bottom: 3px;
     }
