@@ -631,7 +631,8 @@ footer h2
     .active
        {
         border-bottom: 2px solid #0065FC;
-		border-top: none;		
+		border-top: none;
+		padding-left: 0;
     }
 
     .active-1
