@@ -1,4 +1,4 @@
-/*police personnalisé Raleway (medium) pris sur google font et généreé en web sur fontawesome*/
+/*police personnalisé Raleway (medium) pris sur google font et générée en web sur fontawesome*/
 @font-face {
     font-family: 'raleway-medium';
     src: url('font/raleway-medium-webfont.woff2') format('woff2'),
@@ -8,7 +8,7 @@
 
 }
 
-/*police personnalisé Raleway (thin) pour tout le site*/
+/*police personnalisé 'Raleway-medium' pour tout le site*/
 body
 {
 	font-family: 'raleway-medium';
@@ -601,7 +601,7 @@ footer h2
 	    height: auto;
     }
 
-        header h1
+    header h1
        {
 	    font-size: 1.5em; 
 	    font-weight: bold;
@@ -612,7 +612,7 @@ footer h2
 	    width: 100%;
 	}
 
-        header h2
+    header h2
        {
 	    font-size: 1em;
 	    font-weight: normal;
@@ -622,7 +622,7 @@ footer h2
 		margin-bottom: 30px;
     }
 
-	    nav li
+	nav li
        {
 	    border-bottom: 2px solid transparent;
 	    padding-bottom: 15px;   		
@@ -728,7 +728,7 @@ footer h2
 	    flex-direction: row;
 	    border-radius: 15px;
 		height: auto;
-		margin-left: 30px;
+		margin-left: 20px;
 		margin-right: 0;
     }
 
@@ -740,8 +740,8 @@ footer h2
     input
        {
 	    border: none;
-		padding-right: 16px;
-		font-size: 1em;
+		padding-right: 1px;
+		font-size: 0.9em;
     }	
 
     button
@@ -1032,7 +1032,7 @@ footer h2
 
     aside figcaption h3
        {
-	    font-size: 1em;
+	    font-size: 0.8em;
 	    text-decoration: none;
 	    color: black;
 	    padding-left: 0.2em;
@@ -1206,8 +1206,8 @@ footer h2
     }
 }	
 
-/* responsive tablette*/
-@media all and (min-width: 768px) and (max-width: 991px)
+/*responsive tablette*/
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
 	bloc_page
 	{
@@ -1215,7 +1215,7 @@ footer h2
 	}	
 }
 
-@media all and (min-width:768px) and (max-width: 991px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
     header
        {
@@ -1297,7 +1297,7 @@ footer h2
     }
 }
 	
-@media all and (min-width:768px) and (max-width: 991px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
 	.location-icon
        {
@@ -1352,7 +1352,7 @@ footer h2
     }
 }
 
-@media all and (min-width:768px) and (max-width: 991px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {	
     #filters  
        {
@@ -1419,7 +1419,7 @@ footer h2
     }
 }	
 
-@media all and (min-width:768px) and (max-width: 991px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
     /*la partie avec l'icône info*/
     #information 
@@ -1447,7 +1447,7 @@ footer h2
     }		
 }
 
-@media all and (min-width:768px) and (max-width: 991px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
     /*Entame du corps du site*/
     section
@@ -1648,7 +1648,7 @@ footer h2
     }
 }
 
-@media all and (min-width:768px) and (max-width: 991px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
     /*partie activité*/
     #activities_mar 
@@ -1731,7 +1731,7 @@ footer h2
     }
 }
 
-@media all and (min-width:768px) and (max-width: 991px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
     /*partie footer*/
     footer
@@ -1786,8 +1786,7 @@ footer h2
 	    padding-left: 1em;
     }
 }	
-
-
+	
 
 
 
